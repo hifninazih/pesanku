@@ -1,7 +1,7 @@
 <?php
 include './koneksi-db.php';
-$telegrambot = 'bot5848197931:AAHr-2t1k-SYA5h3Mp4f7XMXf3qmaUbhNyk';
-$user = '734141921';
+$telegrambot = 'bot[TOKEN_BOT]';
+$user = '[ID_PENGGUNA]';
 function sendMessage($text, $bot, $chat_id){
 $url = 'https://api.telegram.org/' . $bot . '/sendMessage?chat_id=' . $chat_id . '&text=' . $text;
 $result = file_get_contents($url, true);
